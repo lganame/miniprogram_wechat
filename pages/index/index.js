@@ -15,6 +15,9 @@ Page({
       url: '../logs/logs'
     })
   },
+  toatoast: function(){
+     wx.showToast({title:'成功',icon:'success',duration:2000})
+  },
   onLoad: function () {
     if (app.globalData.userInfo) {
       this.setData({
@@ -52,3 +55,6 @@ Page({
     })
   }
 })
+{
+
+}
